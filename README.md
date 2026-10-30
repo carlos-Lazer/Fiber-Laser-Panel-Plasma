@@ -14,7 +14,7 @@ GitHub’s file viewer displays HTML source. Use the Pages website to operate th
 
 ## Features
 
-- 150 checkboxes, section navigation, and progress tracking
+- 167 checkboxes, section navigation, and progress tracking
 - Operator, wafer and lot details, plus run notes
 - Browser-local saved progress, printable record and JSON export
 - Original SOP photos and critical machine rules
@@ -24,3 +24,7 @@ Checkmarks record operator confirmation; they do not control or verify the machi
 ## Source review required
 
 Section 14 orders profile loading differently from the global Start Run rule. The checklist preserves the original sequence and flags this discrepancy for the procedure owner to resolve before production use. Section 17 gives no numeric Count limits. Conditional repeat-pass actions may remain unchecked when not needed; document the reason in run notes.
+
+## Bottom wafer rotation update
+
+After rotating the Bottom Wafer 180°, repeat Wobble Left and Wobble Right before the second-orientation Horizontal and Vertical sensors. Do not Home between the left and right wobble profiles. Home after completing the right-side wobble, then continue with the sensor procedures. Bottom STM remains once after the second-orientation sensors. This revision starts a fresh browser checklist so earlier completion marks do not carry into the changed process.
